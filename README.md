@@ -5,6 +5,8 @@ Servers in DC
 
 ### staging
 full copy of production servers
+- performance testing
+- load testing
 > A stage or staging environment is an environment for testing that exactly resembles a production environment
 >
 > -- <cite>https://en.wikipedia.org/wiki/Deployment_environment</cite>
