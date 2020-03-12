@@ -1,26 +1,30 @@
 # deployment environment
 
 ### production
-серверы в ДЦ
+Servers in DC
 
 ### staging
-точная копия прода
+full copy of production servers
 > A stage or staging environment is an environment for testing that exactly resembles a production environment
 >
 > -- <cite>https://en.wikipedia.org/wiki/Deployment_environment</cite>
 
 ### test 
-для работы QA
+servers for QA
 > The purpose of the test environment is to allow human testers to exercise new and changed code via either automated checks or non-automated techniques.
 >
 > -- <cite>https://en.wikipedia.org/wiki/Deployment_environment</cite>
 
-### development
-десктопы разработчиков
+### dev
+servers for developers
 
+### local
+developer desktops
+> Developer's desktop/workstation
+>
+> -- <cite>https://en.wikipedia.org/wiki/Deployment_environment</cite>
 
-Среды разработки должы быть одинаковы.
-Один раз устанавливал Consul, протестировал в тестовой среде, потом поставил в прод. Как потом оказалось на тесте и проде были разные процессоры... Consul написан на Golang, как оказалось определенная версия golang вызывала бесконечный цикл с определенными типом процессоров. Consul начал утилизировать 100% CPU в следствии чего была сильная деградация сервиса.
+Environments should be abolutely equals. Even by CPU manufactures, app can run in test env, but will fail in prod because of some bug in libC cooperation with kernel. 
 
 # networks
 
