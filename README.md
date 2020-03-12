@@ -9,10 +9,10 @@ Servers in DC
 - performance testing
 - load testing
 - test all the installation/configuration/migration scripts and procedures before they're applied to a production environment
-> A stage or staging environment is an environment for testing that exactly resembles a production environment
->
-> -- <cite>https://en.wikipedia.org/wiki/Deployment_environment</cite>
-> -- <cite>https://softwareengineering.stackexchange.com/questions/355103/whats-the-difference-between-staging-and-uat-environments</cite>
+
+https://en.wikipedia.org/wiki/Deployment_environment
+
+https://softwareengineering.stackexchange.com/questions/355103/whats-the-difference-between-staging-and-uat-environments
 
 ### test 
 servers for QA
