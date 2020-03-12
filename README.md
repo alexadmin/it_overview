@@ -3,6 +3,9 @@
 ### production
 Servers in DC
 
+### UAT (User acceptance testing)
+- full copy of production servers with user data
+
 ### staging
 - full copy of production servers, but DB may be anonymized
 - may connect to other production services and data, such as databases
