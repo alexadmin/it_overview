@@ -4,7 +4,8 @@
 Servers in DC
 
 ### staging
-full copy of production servers
+- full copy of production servers
+- may connect to other production services and data, such as databases
 - performance testing
 - load testing
 > A stage or staging environment is an environment for testing that exactly resembles a production environment
