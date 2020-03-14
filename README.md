@@ -45,7 +45,7 @@ OS: Centos 7
 
 PKG: openvpn-2.4.8-1.el7.x86_64, openvpn-auth-ldap-2.0.3-17.el7.x86_64
 
-LDAP: Windows Server 2012 Std
+LDAP server: Windows Server 2012 Std
 
 /etc/sysctl.d/forward.conf
 ```
