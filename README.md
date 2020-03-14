@@ -124,12 +124,12 @@ plugin /usr/lib64/openvpn/plugin/lib/openvpn-auth-ldap.so auth/ldap.conf
 client.conf
 ```
 client
-proto tcp
+proto udp
 dev tun
 #
-remote XXXXXXXXX 443
-remote XXXXXXXXX 443
-remote XXXXXXXXX 443
+remote XXXXXXXXX XXXX
+remote XXXXXXXXX XXXX
+remote XXXXXXXXX XXXX
 connect-timeout 5
 #
 dhcp-option DNS XXXXXXXX
