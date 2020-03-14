@@ -72,8 +72,8 @@ COMMIT
 
 /etc/openvpn/server.conf
 ```
-port 443
-proto tcp
+port XXXX
+proto udp
 dev tun
 ca keys/ca.crt
 cert keys/server.crt
