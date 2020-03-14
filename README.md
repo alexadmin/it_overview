@@ -114,3 +114,34 @@ plugin /usr/lib64/openvpn/plugin/lib/openvpn-auth-ldap.so auth/ldap.conf
        SearchFilter    "(&(objectCategory=person)(objectClass=user)(sAMAccountName=%u)(memberOf=CN=XXXXXXX))"
 </Authorization>
 ```
+
+client.conf
+```
+client
+proto tcp
+dev tun
+#
+remote XXXXXXXXX 443
+remote XXXXXXXXX 443
+remote XXXXXXXXX 443
+connect-timeout 5
+#
+dhcp-option DNS XXXXXXXX
+dhcp-option DNS XXXXXXXX
+#
+resolv-retry infinite
+nobind
+auth-user-pass
+comp-lzo
+ca ca.crt
+cert client.crt
+key client.key
+dh dh2048.pem
+tls-client
+tls-auth ta.key 1
+float
+keepalive 10 120
+persist-key
+persist-tun
+verb 0
+```
