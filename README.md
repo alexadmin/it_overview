@@ -2,9 +2,13 @@
 
 Critical tools on job:
 
-### Documentation
+# Documentation
 
 Documentation shoud be in one place.
+
+# Job processes
+
+Create task, describe it. How you will do it. Count all cooperation people, create agreament with all people. Before production deployment write plan of installation and reverce and backup steps
 
 # deployment environment
 
