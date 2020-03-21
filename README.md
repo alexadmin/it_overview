@@ -6,6 +6,16 @@ when you've been hired for a job, start with that:
 
 [authorization service](#authorization-service)
 
+==================================================
+
+# Deployment
+
+The most simple scheme: Jenkins + Ansible. Create simple job and run ansible something like that:
+```
+ansible-playbook -i dev/some_app.yml
+ansible-playbook -i prod/some_app.yml
+```
+
 # documentation
 
 Documentation shoud be in one place.
