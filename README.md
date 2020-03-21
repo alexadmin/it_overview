@@ -86,6 +86,6 @@ Jist disable it. It's hell.
 
 # Log server
 
-Graylog is best choise. Was founded in 2009.
+Graylog is best choice. Was founded in 2009.
 - LDAP auth with group mapping
 - all transports
