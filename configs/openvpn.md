@@ -100,7 +100,6 @@ comp-lzo
 ca ca.crt
 cert client.crt
 key client.key
-dh dh2048.pem
 tls-client
 tls-auth ta.key 1
 float
