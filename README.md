@@ -1,8 +1,10 @@
 [OpenVPN](#openvpn)
 
-Critical tools on job:
+[documentation](#documentation)
 
-# Documentation
+[authorization service](#authorization-service)
+
+# documentation
 
 Documentation shoud be in one place.
 
@@ -12,7 +14,7 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 
 - provides authorization, not all data should be exposed.
 
-# Authorization service
+# authorization service
 
 Windows Server - is best choise. Yes, I'm Linux admin, but I use it. OpenLDAP is not suited for commercial exploitation. Install at least 2 servers. First server promote to DC, add second server to domain of first server, promote second server to DC.
 
