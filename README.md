@@ -1,3 +1,7 @@
+# Foreword
+
+In this book I will share with you knoledge of services which was successfully installed in production of different companies. I spent many years with that systems, I sent years of testing it. I'd like than you will not lose years for choosing between different technologies. 
+
 when you've been hired for a job, start with that:
 
 [OpenVPN](configs/openvpn.md)
