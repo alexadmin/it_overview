@@ -1,3 +1,5 @@
+when you've been hired for a job, start with that:
+
 [OpenVPN](#OpenVPN)
 
 [documentation](#documentation)
