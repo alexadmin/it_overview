@@ -20,6 +20,11 @@ ansible-playbook -i dev/some_app.yml
 ansible-playbook -i prod/some_app.yml
 ```
 
+```
+Using the same script to deploy to production that you use to deploy to development environments is a fantastic way to prevent the “it works on my machine” syndrome
+```
+Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley
+
 # documentation
 
 Documentation shoud be in one place.
