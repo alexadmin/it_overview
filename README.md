@@ -10,7 +10,7 @@ when you've been hired for a job, start with that:
 
 # Deployment
 
-The most simple scheme: Jenkins + Ansible. Create simple job and run ansible something like that:
+The most simple scheme: Jenkins + Ansible. Create simple job in Jenkins and run ansible something like that:
 ```
 ansible-playbook -i dev/some_app.yml
 ansible-playbook -i prod/some_app.yml
