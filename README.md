@@ -84,4 +84,6 @@ Create separate network for each segment. For example if you have rack in DC and
 
 Jist disable it. It's hell.
 
-#
+# Log server
+
+Graylog is best choise. Was founded in 2009.
