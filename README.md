@@ -6,6 +6,12 @@ Critical tools on job:
 
 Documentation shoud be in one place.
 
+Confluence - is good choice. Free mediawiki can't competite with him. 
+
+- links from one page to other pages will change while you will move pages. You will edit your documentation, you will change structure of documents
+
+- provides authorization, not all data should be exposed.
+
 # Job processes
 
 Create task, describe it. How you will do it. Count all cooperation people, create agreament with all people. Before production deployment write plan of installation and reverce and backup steps
