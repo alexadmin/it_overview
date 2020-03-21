@@ -1,6 +1,6 @@
 when you've been hired for a job, start with that:
 
-[OpenVPN](#configs/openvpn.md)
+[OpenVPN](configs/openvpn.md)
 
 [documentation](#documentation)
 
