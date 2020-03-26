@@ -38,4 +38,7 @@ select count(*) from pg_stat_activity;
 
 # SHOW IDLE CONNECTIONS
 select COUNT(*) from pg_stat_activity WHERE state = 'idle';
+
+# SHOW DATABASE SIZE
+SELECT pg_size_pretty( pg_database_size('DB_NAME') );
 ```
