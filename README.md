@@ -94,3 +94,8 @@ Jist disable it. It's hell.
 Graylog is best choice. Was founded in 2009.
 - LDAP auth with group mapping
 - all transports
+
+# Databases
+
+- pg_dumpall - not consistent, use pg_basebackup
+- backup dbs each first day of month for 1 year, and of cause everyday during week
