@@ -33,10 +33,6 @@ docker exec -t -u postgres container_name pg_dumpall -c | gzip > /tmp/dump.sql
 # CHECK REPLICA
 ps wuax | grep receiver
 
-[/bash]
-
-<strong>Sessions</strong>
-[bash]
 # SHOW ALL SESSIONS
 select count(*) from pg_stat_activity;
 
