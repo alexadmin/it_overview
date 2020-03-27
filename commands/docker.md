@@ -55,6 +55,10 @@ docker ps -a | grep -v 'CONTAINER' | awk 'system("docker rm -f  "$1)'
 cd /data/docker/containers/registry/var/lib/registry/docker/registry/v2/repositories
 rm -rf image_name
 
+# pg_basebackup
+docker run --name some-postgres -e POSTGRES_PASSWORD=password -d postgres:10
+docker exec -i -t some-postgres pg_basebackup -D my_pg_basebackup -F p -X stream -c fast -P -v -h 192.168.99.122 -U postgres
+
 # DELETE IMAGES WITH <none> TAG
 docker images | grep '<none>' | awk 'system("docker rmi -f  "$3)'
 
