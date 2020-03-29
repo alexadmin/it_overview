@@ -42,3 +42,11 @@ select COUNT(*) from pg_stat_activity WHERE state = 'idle';
 # SHOW DATABASE SIZE
 SELECT pg_size_pretty( pg_database_size('DB_NAME') );
 ```
+9.3
+```
+yum -y install https://download.postgresql.org/pub/repos/yum/9.3/redhat/rhel-7-x86_64/pgdg-centos93-9.3-3.noarch.rpm
+yum -y install postgresql93-server
+/usr/pgsql-9.3/bin/postgresql93-setup initdb
+systemctl enable postgresql-9.3
+systemctl start postgresql-9.3
+```
