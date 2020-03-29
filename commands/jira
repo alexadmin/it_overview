@@ -1,0 +1,6 @@
+```
+su - postgres
+psql
+CREATE ROLE jira WITH PASSWORD 'iumoijoi8Y&Ygf' LOGIN;
+CREATE DATABASE jiradb WITH OWNER jira;
+```
