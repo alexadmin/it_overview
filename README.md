@@ -6,6 +6,8 @@ when you've been hired for a job, start with that:
 
 [OpenVPN](configs/openvpn.md)
 
+VPN - tool for technical specialist, not for managers.
+
 [documentation](#documentation)
 
 [authorization service](#authorization-service)
