@@ -84,6 +84,7 @@ Environments should be abolutely equals. Even by CPU manufactures, app can run i
 # networks
 
 Create separate network for each segment. For example if you have rack in DC and DC provider provide LAN to cloud, keep rack servers and cloud VM in different network to avoid loop. If you aimed to configure VLAN from HQ to DC you will get loop with high probability.
+- developer can bring up server on desktop and tell another developer ip address, that way multiple server born. Rescrict on swith that developers can't see each other.
 
 # Security
 
