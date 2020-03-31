@@ -103,3 +103,6 @@ Graylog is best choice. Was founded in 2009.
 - even if you backup VM, backup db localy, it provides you to restore db fast. Restore VM is long.
 - pg_dumpall - not consistent, use pg_basebackup
 - backup dbs each first day of month for 1 year, and of cause everyday during week
+
+# New service deploy
+- it shouldn't create technical dept
