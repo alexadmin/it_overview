@@ -106,3 +106,6 @@ Graylog is best choice. Was founded in 2009.
 
 # New service deploy
 - it shouldn't create technical dept
+
+# Balancers
+- create small VM for stale domains, 301 etc. Do not store legacy domains for redirects in production.
