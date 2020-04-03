@@ -109,3 +109,6 @@ Graylog is best choice. Was founded in 2009.
 
 # Balancers
 - create small VM for stale domains, 301 etc. Do not store legacy domains for redirects in production.
+
+# iptables
+- tcpdump can see incoming packets if they are droped by iptables, but can't see outgoing
