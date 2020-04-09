@@ -111,7 +111,12 @@ Graylog is best choice. Was founded in 2009.
 - it shouldn't create technical dept
 
 # Balancers
+- should be dumd, idea balancer - nginx with one reverse proxy block, proxy next upstream, it shouldn't contain logic, so you can bring up web server in different env, and all should work without balancer. 
 - create small VM for stale domains, 301 etc. Do not store legacy domains for redirects in production.
+- suited for: ip filtering, auth (basic)
+
+# web server
+- suited for: rewrites and redirects, web site should work without balancer 
 
 # iptables
 - tcpdump can see incoming packets if they are droped by iptables, but can't see outgoing
