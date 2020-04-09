@@ -8,6 +8,8 @@ when you've been hired for a job, start with that:
 
 VPN - tool for technical specialist, not for managers.
 
+[balancer](#balancer)
+
 [webserver](#webserver)
 
 [documentation](#documentation)
