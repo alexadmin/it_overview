@@ -130,11 +130,7 @@ Graylog is best choice. Was founded in 2009.
 Mount directory by NFS or samba seems fast and easy solution, but you should not use it in production because of these reasons:
 
 - share can be mounted to multiple servers, some one think about re-installation, he can switch off traffic on nginx upstream and delete contents in shared folder... That person may be complete unaware, than it is mount directory. 
-- if share becomes inaccessible because of network reasons, whole OS may hung, you can't even check free disk space with 
-
-```df -h```
-
-or list some directories and application may crash.
+- if share becomes inaccessible because of network reasons, whole OS may hung, you can't even check free disk space with ```df -h``` or list some directories and application may crash.
 - when application write/read file to remote folder, application thinks that it is local directory, but it is not truth. This folder has network latency and application may crash.
 - very difficult troubleshooting. When problems with file synchronization happen you should check 2 things: port accessibility and file system permissions, if something go wrong with NFS, you should troubleshoot whole protocol - https://tools.ietf.org/html/rfc1813, and samba even more robust.
 - intelligent write to server. When you configure file synchronization you can limit synchronization bandwidth, it can prevent server overload.
