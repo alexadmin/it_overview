@@ -136,4 +136,4 @@ Mount directory by NFS or samba seems fast and easy solution, but you should not
 - intelligent write to server. When you configure file synchronization you can limit synchronization bandwidth, it can prevent server overload.
 
 # backup
-- if you use rsync run as root on both servers, source server should be completely accessible
+- if you use rsync run as root on both servers, source server should be completely accessible. For example Bacula documentation: "The Clients (bacula-fd) must run as root to be able to access all the system files."
