@@ -134,3 +134,6 @@ Mount directory by NFS or samba seems fast and easy solution, but you should not
 - when application write/read file to remote folder, application thinks that it is local directory, but it is not truth. This folder has network latency and application may crash.
 - very difficult troubleshooting. When problems with file synchronization happen you should check 2 things: port accessibility and file system permissions, if something go wrong with NFS, you should troubleshoot whole protocol - https://tools.ietf.org/html/rfc1813, and samba even more robust.
 - intelligent write to server. When you configure file synchronization you can limit synchronization bandwidth, it can prevent server overload.
+
+# backup
+- if you use rsync run as root on both servers, source server should be completely accessible
