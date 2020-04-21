@@ -132,4 +132,4 @@ relay logs are purged when the slave has finished applying the data from them
 
 # STRESS TEST
 MYSQL_HOSTNAME='localhost' && for table in $(mysql -h $MYSQL_HOSTNAME mmarket_mmarket_test -e "show tables;" -B); do mysql -h $MYSQL_HOSTNAME mmarket_mmarket_test -e "select * from "$table";"; done
-``
+```
