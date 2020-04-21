@@ -1,3 +1,4 @@
+```
 # CREATE TABLE INNODB
 CREATE TABLE test.`users` (
          `uid` INT(10) NOT NULL AUTO_INCREMENT,
@@ -116,7 +117,7 @@ innodb_file_per_table
 [/bash]
 
 
-[bash]
+
 # LOG ALL QUERIES
 set @@global.general_log = ON;
 
@@ -128,6 +129,7 @@ relay logs are purged when the slave has finished applying the data from them
 [/bash]
 
 
-[bash]
+
 # STRESS TEST
 MYSQL_HOSTNAME='localhost' && for table in $(mysql -h $MYSQL_HOSTNAME mmarket_mmarket_test -e "show tables;" -B); do mysql -h $MYSQL_HOSTNAME mmarket_mmarket_test -e "select * from "$table";"; done
+``
