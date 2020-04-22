@@ -39,11 +39,11 @@ kubectl exec shell-demo ls /
 # EXPOSE PORT
 kubectl run my-nginx --image=nginx --replicas=1 --port=80
 kubectl expose rc my-nginx --port=80 --target-port=80 --name=my-nginx-akfud --public-ip="192.168.7.27"
-[/bash]
+```
 
 <strong>Cluster administration</strong>
 
-[bash]
+```
 # CHECK API SERVER
 kubectl cluster-info
 
@@ -54,10 +54,10 @@ kubectl get endpoints kube-controller-manager --namespace=kube-system  -o yaml
 kubectl drain mynode
 # connect node
 kubectl uncordon mynode 
-[/bash]
+```
 
 <strong>rc-nginx.yaml</strong>
-[bash]
+```
 apiVersion: v1
 kind: ReplicationController
 metadata:
@@ -76,10 +76,10 @@ spec:
         image: nginx:1.7.9
         ports:
         - containerPort: 80
-[/bash]
+```
 
 <strong>svc-nginx.yaml</strong>
-[bash]
+```
 apiVersion: v1
 kind: Service
 metadata:
