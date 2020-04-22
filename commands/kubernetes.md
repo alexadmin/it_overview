@@ -1,6 +1,6 @@
 <strong>Containers operation</strong>
 
-[bash]
+```
 # INTER INTO CONTAINER
 kubectl exec -it my-pod -- /bin/bash
 
@@ -96,9 +96,9 @@ spec:
       port: 80
   selector:
       app: nginx
-[/bash]
+```
 
-[bash]
+```
 # get deployments
 curl -k -H "Authorization: Bearer ${TOKEN}" https://${IP}:6443/apis/apps/v1/namespaces/default/deployments
-[/bash]
+```
