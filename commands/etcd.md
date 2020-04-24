@@ -8,6 +8,9 @@ etcdctl cluster-health
 # SHOW MEMBERS
 etcdctl member list
 
+# SHOW LEADER
+etcdctl -w table --endpoints=[ip]:2379,[ip]:2379,[ip]:2379 endpoint status
+
 # LIST
 etcdctl get /coreos.com/network/ --prefix --keys-only
 
