@@ -144,3 +144,6 @@ ddos - attack from multiple servers
 - system administrators and webservers can block dos attack
 - ddos attack can be blocked only by application (for example 2FA)
 You can review proxy servers services, they are offers simple tariff plan with 500k ip addresses. Let's say from 500k 1k will be very active, you can detect it fast in your logs, but another ip addressed will request your servers a couple times per day. If you will block 1k active ip addressed it will not resolve the issue.
+
+# monitoring
+- every storage service RabbitMQ, MySQL... should be monitored. Script should generate hash, write it, read it and compare it.
