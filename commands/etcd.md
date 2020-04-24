@@ -99,21 +99,14 @@ sed -i s'/ETCD_INITIAL_CLUSTER_STATE="new"/ETCD_INITIAL_CLUSTER_STATE="existing"
 ===========================
 ```
 
-<strong>REINSTALL NODE STEPS</strong>
+<strong>REINSTALL NODE STEPS (v3.4)</strong>
 ```
-===========================================================
-# REMOVE NODE FROM WORKING SERVER
-etcdctl member remove xxx
-
-# ON NEW NODE
-# 0) install etcd
-# 1) insert old config
-# 2) set ETCD_INITIAL_CLUSTER_STATE="new" in etcd.conf
-# 3) start etcd
-# 4) add member from working node
-# 5) stop etcd
-# 6) rm -rf /var/lib/etcd/*
-# 7) set ETCD_INITIAL_CLUSTER_STATE="existing" in etcd.conf
-# 8) start etcd
-===========================================================
+# SHOW HASH ON WORKING NODE
+etcdctl -w table member list
+# REMOVE BY HASH ON WORKING NODE
+etcdctl member remove HASH_OF_DELETED_PEER
+# ADD ON WORKING NODE
+etcdctl member add RECOVERED_NAME --peer-urls=http://RECOVERED_IP:2380
+# START SERVICE ON NEW NODE WITH OLD CONFIG (existing)
+systemctl start etcd
 ```
