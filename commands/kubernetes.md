@@ -109,12 +109,15 @@ kubectl -n kube-system describe secret $(sudo kubectl -n kube-system get secret 
 ```
 
 Description:
+Server
 1) kube-controller-manager
 2) kube-apiserver
 3) kube-scheduler
-4) 
-kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers.
-2) kubectl: the command line util to talk to your cluster.
+4) kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers.
+5) kube-proxy
+
+Client
+kubectl: the command line util to talk to your cluster.
 3) 
 
 
