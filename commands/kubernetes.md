@@ -124,6 +124,11 @@ kubectl: the command line util to talk to your cluster.
 
 kubeadm: the command to bootstrap the cluster.
 
-
-
+```
+# RESTART ALL
+systemctl restart etcd kube-apiserver kube-controller-manager kube-scheduler
+systemctl status etcd kube-apiserver kube-controller-manager kube-scheduler
+# STOP ALL
+systemctl stop etcd kube-apiserver kube-controller-manager kube-scheduler
+```
 
