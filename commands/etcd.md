@@ -14,8 +14,12 @@ etcdctl -w table --endpoints=[ip]:2379,[ip]:2379,[ip]:2379 endpoint status
 # SINGLE HOST
 etcdctl -w table endpoint status
 
+
+
 # LIST
 etcdctl get /coreos.com/network/ --prefix --keys-only
+# etcd 3.3
+ETCDCTL_API=3 etcdctl get / --prefix --keys-only
 
 # BACKUP 
 etcdctl backup --data-dir /var/lib/etcd/default.etcd/member/ --backup-dir etcd_backup
