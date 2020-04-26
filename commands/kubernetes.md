@@ -21,6 +21,9 @@ kubectl describe pods my-nginx
 # DELETE RC
 kubectl delete rc my-nginx
 
+# SHOW CONFIG
+kubectl config view
+
 # SHOW PODS WITH NODES
 kubectl get pods -o wide
 
