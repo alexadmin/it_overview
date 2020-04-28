@@ -42,6 +42,12 @@ kubectl exec shell-demo ls /
 # EXPOSE PORT
 kubectl run my-nginx --image=nginx --replicas=1 --port=80
 kubectl expose rc my-nginx --port=80 --target-port=80 --name=my-nginx-akfud --public-ip="192.168.7.27"
+
+kubectl get Role -n kube-system
+kubectl get RoleBinding -n kube-system
+
+kubectl get ClusterRoles -n kube-system
+kubectl get ClusterRoleBinding -n kube-system
 ```
 
 <strong>Cluster administration</strong>
