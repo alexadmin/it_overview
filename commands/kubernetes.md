@@ -119,25 +119,21 @@ kubectl -n kube-system describe secret $(sudo kubectl -n kube-system get secret 
 3) kube-scheduler
 
 ##### Worker:
-1) kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers.
+1) kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers
 
 ##### Tools:
-1) kubectl: the command line util to talk to your cluster.
+1) kubectl: the command line util to talk to your cluster
 2) kube-proxy
+3) kubeadm: the command to bootstrap the cluster
 
-Client
+Authentication:
 
-3) 
+2 user types:
+- service accounts, managed by the Kubernetes API, bound to specific namespaces. Service accounts are tied to "secrets"
+- normal users, managed by external entity. Kubernetes does not have objects which represent normal user accounts. Normal users cannot be added to a cluster through an API call.
 
 
 
-kubeadm: the command to bootstrap the cluster.
 
-```
-# RESTART ALL
-systemctl restart etcd kube-apiserver kube-controller-manager kube-scheduler
-systemctl status etcd kube-apiserver kube-controller-manager kube-scheduler
-# STOP ALL
-systemctl stop etcd kube-apiserver kube-controller-manager kube-scheduler
-```
+
 
