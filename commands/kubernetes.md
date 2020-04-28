@@ -138,7 +138,8 @@ Authentication:
 - service accounts, managed by the Kubernetes API, bound to specific namespaces. Service accounts are tied to "secrets"
 - normal users, managed by external entity. Kubernetes does not have objects which represent normal user accounts. Normal users cannot be added to a cluster through an API call.
 
-
+Role always sets permissions within a particular namespace.
+ClusterRole is a non-namespaced resource.
 
 
 
