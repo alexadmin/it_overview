@@ -147,3 +147,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 # monitoring
 - every storage service RabbitMQ, MySQL... should be monitored. Script should generate hash, write it, read it and compare it.
+
+- QA engineers should work with GUI only
+
+
