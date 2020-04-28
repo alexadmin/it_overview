@@ -111,16 +111,22 @@ kubectl create clusterrolebinding k8sadmin --clusterrole=cluster-admin --service
 kubectl -n kube-system describe secret $(sudo kubectl -n kube-system get secret | (grep k8sadmin || echo "$_") | awk '{print $1}') | grep token: | awk '{print $2}'
 ```
 
-Description:
-Server
+### Description
+
+##### Server:
 1) kube-controller-manager
 2) kube-apiserver
 3) kube-scheduler
-4) kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers.
-5) kube-proxy
+
+##### Worker:
+1) kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers.
+
+##### Tools:
+1) kubectl: the command line util to talk to your cluster.
+2) kube-proxy
 
 Client
-kubectl: the command line util to talk to your cluster.
+
 3) 
 
 
