@@ -126,11 +126,11 @@ kubectl -n kube-system describe secret $(sudo kubectl -n kube-system get secret 
 
 ##### Worker:
 1) kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers. The kubelet doesn’t manage containers which were not created by Kubernetes.
+2) kube-proxy
 
 ##### Tools:
 1) kubectl: the command line util to talk to your cluster
-2) kube-proxy
-3) kubeadm: the command to bootstrap the cluster
+2) kubeadm: the command to bootstrap the cluster
 
 Authentication:
 
