@@ -125,7 +125,7 @@ kubectl -n kube-system describe secret $(sudo kubectl -n kube-system get secret 
 3) kube-scheduler
 
 ##### Worker:
-1) kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers
+1) kubelet: the component that runs on all of the machines in your cluster and does things like starting pods and containers. The kubelet doesn’t manage containers which were not created by Kubernetes.
 
 ##### Tools:
 1) kubectl: the command line util to talk to your cluster
