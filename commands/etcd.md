@@ -4,6 +4,7 @@ curl -L http://127.0.0.1:2379/version
 
 # CHECK CLUSTER HEALTH
 etcdctl cluster-health
+etcdctl --ca-file=/etc/pki/etcd/etcd-ca.crt --cert-file=/etc/pki/etcd/etcd.crt --key-file=/etc/pki/etcd/etcd.key cluster-health
 
 # SHOW MEMBERS
 etcdctl member list
