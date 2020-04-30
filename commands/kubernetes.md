@@ -121,6 +121,7 @@ kubectl -n kube-system describe secret $(sudo kubectl -n kube-system get secret 
 
 ##### Server:
 1) kube-controller-manager
+- certificate-issuing control loop
 2) kube-apiserver
 3) kube-scheduler
 
