@@ -66,6 +66,10 @@ kubectl get endpoints kube-controller-manager --namespace=kube-system  -o yaml
 kubectl drain mynode
 # connect node
 kubectl uncordon mynode 
+
+# RESET
+kubeadm reset
+etcdctl del "" --prefix
 ```
 
 <strong>rc-nginx.yaml</strong>
