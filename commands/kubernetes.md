@@ -56,6 +56,9 @@ kubectl get ClusterRoleBinding -n kube-system
 # CHECK API SERVER
 kubectl cluster-info
 
+# JOIN
+kubeadm token create --print-join-command
+
 # SHOW LEADER
 kubectl get endpoints kube-controller-manager --namespace=kube-system  -o yaml
 
