@@ -51,7 +51,6 @@ kubectl get ClusterRoleBinding -n kube-system
 ```
 
 <strong>Cluster administration</strong>
-
 ```
 # CHECK API SERVER
 kubectl cluster-info
@@ -62,14 +61,19 @@ kubeadm token create --print-join-command
 # SHOW LEADER
 kubectl get endpoints kube-controller-manager --namespace=kube-system  -o yaml
 
-# disconnect node
-kubectl drain mynode
-# connect node
-kubectl uncordon mynode 
-
 # RESET
 kubeadm reset
 etcdctl del "" --prefix
+```
+
+<strong>nodes</strong>
+```
+# disconnect node
+kubectl drain mynode
+# connect back node
+kubectl uncordon mynode 
+# prevent a node from scheduling new pods
+kubectl cordon mynode
 ```
 
 <strong>rc-nginx.yaml</strong>
