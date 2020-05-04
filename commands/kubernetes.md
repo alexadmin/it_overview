@@ -153,6 +153,10 @@ Authentication:
 Role always sets permissions within a particular namespace.
 ClusterRole is a non-namespaced resource.
 
+##### Deployment
+
+####### liveness 
+probes to know when to restart a container
 
 
 
