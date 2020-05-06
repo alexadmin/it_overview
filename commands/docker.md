@@ -65,3 +65,8 @@ docker images | grep '<none>' | awk 'system("docker rmi -f  "$3)'
 # DELETE CONTAINERS WITH "Exited" STATUS
 docker ps -a | grep Exited | awk 'system("docker rm -f  "$1)'
 ```
+
+# Databases
+```
+docker run --name mysql57 -p 3357:3306 -e MYSQL_ROOT_PASSWORD=qwerty -d mysql:5.7.30
+```
