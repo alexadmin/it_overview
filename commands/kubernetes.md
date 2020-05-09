@@ -18,6 +18,8 @@ kubectl get pod my-pod
 
 kubectl describe pods my-nginx
 
+kubectl logs my-pod
+
 # DELETE RC
 kubectl delete rc my-nginx
 
