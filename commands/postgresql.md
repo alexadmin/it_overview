@@ -51,8 +51,8 @@ systemctl enable postgresql-9.3
 systemctl start postgresql-9.3
 ```
 
-# CREATE READ ONLY USER
 ```
+# CREATE READ ONLY USER
 \c DB_NAME
 CREATE ROLE readaccess;
 
