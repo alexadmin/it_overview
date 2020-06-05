@@ -50,3 +50,20 @@ yum -y install postgresql93-server
 systemctl enable postgresql-9.3
 systemctl start postgresql-9.3
 ```
+
+# CREATE READ ONLY USER
+```
+\c DB_NAME
+CREATE ROLE readaccess;
+
+-- Grant access to existing tables
+GRANT USAGE ON SCHEMA public TO readaccess;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO readaccess;
+
+-- Grant access to future tables
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO readaccess;
+
+-- Create a final user with password
+CREATE USER tomek WITH PASSWORD 'secret';
+GRANT readaccess TO tomek;
+```
