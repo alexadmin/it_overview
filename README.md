@@ -26,11 +26,11 @@ ansible-playbook -i dev/some_app.yml
 ansible-playbook -i prod/some_app.yml
 ```
 
-> Using the same script to deploy to production that you use to deploy to development environments is a fantastic way to prevent the “it works on my machine” syndrome
+> Using the same script to deploy to production that you use to deploy to development environments is a fantastic way to prevent the “it works on my machine” syndrome (1)
 
-> Use the same process to deploy to every environment
+> Use the same process to deploy to every environment (1)
 
-Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley
+
 
 # documentation
 
@@ -151,4 +151,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 - QA engineers should work with GUI only
 
+# External sources
+
+1) Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley. 2010
 
