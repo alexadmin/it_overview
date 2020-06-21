@@ -24,6 +24,8 @@ VPN - tool for technical specialist, not for managers.
 
 2. App with paticular version should build one time and accept variable depends on env.
 
+3. One app to one DB.
+
 The most simple scheme: Jenkins + Ansible. Create simple job in Jenkins and run ansible something like that:
 ```
 ansible-playbook -i dev/some_app.yml
