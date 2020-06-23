@@ -157,6 +157,11 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 - QA engineers should work with GUI only
 
+# monolithic vs microservice
+
+- monolithic is good at start up for small apps
+- move from monolithic to microservice when developers IDE slow down
+
 # External sources + recomended books
 
 1) Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley. 2010
