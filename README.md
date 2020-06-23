@@ -163,6 +163,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 - move from monolithic to microservice when:
   - developers IDE slow down
   - long time to start up
+  - modules conflicts with each other
 
 # External sources + recomended books
 
