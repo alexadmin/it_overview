@@ -160,7 +160,9 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 # monolithic vs microservice
 
 - monolithic is good at start up for small apps
-- move from monolithic to microservice when developers IDE slow down
+- move from monolithic to microservice when:
+  - developers IDE slow down
+  - long time to start up
 
 # External sources + recomended books
 
