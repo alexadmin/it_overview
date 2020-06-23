@@ -165,6 +165,9 @@ You can review proxy servers services, they are offers simple tariff plan with 5
   - long time to start up
   - modules conflicts with each other
 
+# microservices
+- each app has it own database (create database my_app)
+
 # External sources + recomended books
 
 1) Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley. 2010
