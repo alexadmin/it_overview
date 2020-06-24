@@ -1,3 +1,9 @@
+0 [Foreword](#Foreword)
+
+1 [Documentation](#Documentation)
+
+2 [Deployment environment](#Deployment environment)
+
 # Foreword
 
 In this book I will share with you knoledge of services which was successfully installed in production of different companies. I spent many years with that systems, I spent years of testing it. I'd like than you will not lose years for choosing between different technologies. 
@@ -41,7 +47,6 @@ ansible-playbook -i prod/some_app.yml
 > Use the same process to deploy to every environment (1)
 
 
-
 # Documentation
 
 Documentation shoud be in one place.
@@ -61,9 +66,10 @@ Windows Server - is best choise. Yes, I'm Linux admin, but I use it. OpenLDAP is
 
 # Job processes
 
-Create task, describe it. How you will do it. Count all cooperation people, create agreament with all people. Before production deployment write plan of installation and reverce and backup steps
+- Create task, describe it. How you will do it. Count all cooperation people, create agreament with all people. Before production deployment write plan of installation and reverce and backup steps
+- QA engineers should work with GUI only
 
-# deployment environment
+# Deployment environment
 
 ### production
 Servers in DC
@@ -159,7 +165,6 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 # monitoring
 - every storage service RabbitMQ, MySQL... should be monitored. Script should generate hash, write it, read it and compare it.
 
-- QA engineers should work with GUI only
 
 # monolithic vs microservice
 
