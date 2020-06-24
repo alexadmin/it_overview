@@ -4,6 +4,8 @@
 
 2 [Deployment environment](#Deployment-environment)
 
+3 [Infrastrusture services](#Infrastrusture-services)
+
 # Foreword
 
 In this book I will share with you knoledge of services which was successfully installed in production of different companies. I spent many years with that systems, I spent years of testing it. I'd like than you will not lose years for choosing between different technologies. 
@@ -60,7 +62,9 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 # Docker
 - I didn't use docker for databases and balancers
 
-# authorization service
+# Infrastrusture services
+
+### authorization service
 
 Windows Server - is best choise. Yes, I'm Linux admin, but I use it. OpenLDAP is not suited for commercial exploitation. Install at least 2 servers. First server promote to DC, add second server to domain of first server, promote second server to DC.
 
