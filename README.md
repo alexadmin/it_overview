@@ -51,9 +51,6 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 
 - provides authorization, not all data should be exposed.
 
-# Docker
-- I didn't use docker for databases and balancers
-
 # Infrastrusture services
 
 ### authorization service
@@ -82,6 +79,9 @@ Create separate network for each segment. For example if you have rack in DC and
 
 ### backup
 - if you use rsync run as root on both servers, source server should be completely accessible. For example Bacula documentation: "The Clients (bacula-fd) must run as root to be able to access all the system files."
+
+### Docker
+- I didn't use docker for databases and balancers
 
 # Application services
 
