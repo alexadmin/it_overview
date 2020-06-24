@@ -12,7 +12,7 @@ VPN - tool for technical specialist, not for managers.
 
 [webserver](#webserver)
 
-[documentation](#documentation)
+[documentation](#Documentation)
 
 [authorization service](#authorization-service)
 
@@ -42,7 +42,7 @@ ansible-playbook -i prod/some_app.yml
 
 
 
-# documentation
+# Documentation
 
 Documentation shoud be in one place.
 
