@@ -68,6 +68,39 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 
 Windows Server - is best choise. Yes, I'm Linux admin, but I use it. OpenLDAP is not suited for commercial exploitation. Install at least 2 servers. First server promote to DC, add second server to domain of first server, promote second server to DC.
 
+### log server
+
+Graylog is best choice. Was founded in 2009.
+- LDAP auth with group mapping
+- all transports
+
+### backup
+
+- even if you backup VM, backup db localy, it provides you to restore db fast. Restore VM is long.
+- pg_dumpall - not consistent, use pg_basebackup
+- backup dbs each first day of month for 1 year, and of cause everyday during week
+
+### networks
+
+Create separate network for each segment. For example if you have rack in DC and DC provider provide LAN to cloud, keep rack servers and cloud VM in different network to avoid loop. If you aimed to configure VLAN from HQ to DC you will get loop with high probability.
+- developer can bring up server on desktop and tell another developer ip address, that way multiple server born. Rescrict on swith that developers can't see each other.
+
+### iptables
+- tcpdump can see incoming packets if they are droped by iptables, but can't see outgoing
+
+### backup
+- if you use rsync run as root on both servers, source server should be completely accessible. For example Bacula documentation: "The Clients (bacula-fd) must run as root to be able to access all the system files."
+
+# Application services
+
+### balancer
+- should be dumd, idea balancer - nginx with one reverse proxy block, proxy next upstream, it shouldn't contain logic, so you can bring up web server in different env, and all should work without balancer. 
+- create small VM for stale domains, 301 etc. Do not store legacy domains for redirects in production.
+- suited for: ip filtering, auth (basic)
+
+### webserver
+- suited for: rewrites and redirects, web site should work without balancer 
+
 # Job processes
 
 - Create task, describe it. How you will do it. Count all cooperation people, create agreament with all people. Before production deployment write plan of installation and reverce and backup steps
@@ -109,42 +142,14 @@ developer desktops
 
 Environments should be abolutely equals. Even by CPU manufactures, app can run in test env, but will fail in prod because of some bug in libC cooperation with kernel. 
 
-# networks
-
-Create separate network for each segment. For example if you have rack in DC and DC provider provide LAN to cloud, keep rack servers and cloud VM in different network to avoid loop. If you aimed to configure VLAN from HQ to DC you will get loop with high probability.
-- developer can bring up server on desktop and tell another developer ip address, that way multiple server born. Rescrict on swith that developers can't see each other.
-
 # Security
 
 ## SELinux
 
 Jist disable it. It's hell.
 
-# Log server
-
-Graylog is best choice. Was founded in 2009.
-- LDAP auth with group mapping
-- all transports
-
-# Backup
-
-- even if you backup VM, backup db localy, it provides you to restore db fast. Restore VM is long.
-- pg_dumpall - not consistent, use pg_basebackup
-- backup dbs each first day of month for 1 year, and of cause everyday during week
-
 # New service deploy
 - it shouldn't create technical dept
-
-# balancer
-- should be dumd, idea balancer - nginx with one reverse proxy block, proxy next upstream, it shouldn't contain logic, so you can bring up web server in different env, and all should work without balancer. 
-- create small VM for stale domains, 301 etc. Do not store legacy domains for redirects in production.
-- suited for: ip filtering, auth (basic)
-
-# webserver
-- suited for: rewrites and redirects, web site should work without balancer 
-
-# iptables
-- tcpdump can see incoming packets if they are droped by iptables, but can't see outgoing
 
 # mount vs synchronization
 
@@ -155,9 +160,6 @@ Mount directory by NFS or samba seems fast and easy solution, but you should not
 - when application write/read file to remote folder, application thinks that it is local directory, but it is not truth. This folder has network latency and application may crash.
 - very difficult troubleshooting. When problems with file synchronization happen you should check 2 things: port accessibility and file system permissions, if something go wrong with NFS, you should troubleshoot whole protocol - https://tools.ietf.org/html/rfc1813, and samba even more robust.
 - intelligent write to server. When you configure file synchronization you can limit synchronization bandwidth, it can prevent server overload.
-
-# backup
-- if you use rsync run as root on both servers, source server should be completely accessible. For example Bacula documentation: "The Clients (bacula-fd) must run as root to be able to access all the system files."
 
 # ddos
 dos - attack from one server
