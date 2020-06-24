@@ -18,6 +18,10 @@ VPN - tool for technical specialist, not for managers.
 
 ==================================================
 
+# Services
+
+- connect loosely coupled services with REST, but not with something like RabbitMQ. (I have experience with company and system integrator, one day system integrator updated RabbitMQ, but developer in company was not aware of that. RabbimMQ change message algorithm and company RabbitMQ client become loop)
+
 # Deployment
 
 1. One script must deplpy app to all envs
