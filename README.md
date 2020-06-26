@@ -32,6 +32,11 @@ ansible-playbook -i prod/some_app.yml
 
 > Use the same process to deploy to every environment (1)
 
+### Database migrations
+
+##### Microservices
+
+- Saga pattern suited for microservices. It is local transaction directed by message broker.
 
 # Documentation
 
