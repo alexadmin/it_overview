@@ -14,14 +14,6 @@
 
 In this book I will share with you knoledge of services which was successfully installed in production of different companies. I spent many years with that systems, I spent years of testing it. I'd like than you will not lose years for choosing between different technologies. 
 
-when you've been hired for a job, start with that:
-
-[OpenVPN](configs/openvpn.md)
-
-VPN - tool for technical specialist, not for managers.
-
-==================================================
-
 # Deployment
 
 1. One script must deplpy app to all envs
@@ -94,6 +86,12 @@ Create separate network for each segment. For example if you have rack in DC and
 
 ### webserver
 - suited for: rewrites and redirects, web site should work without balancer 
+
+### VPN
+
+VPN - tool for technical specialist, not for managers.
+
+[OpenVPN](configs/openvpn.md)
 
 # Application services
 
