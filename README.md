@@ -1,10 +1,14 @@
-0 [Foreword](#Foreword)
+[Foreword](#Foreword)
 
-1 [Documentation](#Documentation)
+[Documentation](#Documentation)
 
-2 [Deployment environment](#Deployment-environment)
+[Deployment environment](#Deployment-environment)
 
-3 [Infrastrusture services](#Infrastrusture-services)
+[All services](#All-services)
+
+[Infrastrusture services](#Infrastrusture-services)
+
+[Application services](#Application-services)
 
 # Foreword
 
@@ -17,10 +21,6 @@ when you've been hired for a job, start with that:
 VPN - tool for technical specialist, not for managers.
 
 ==================================================
-
-# Services
-
-- connect loosely coupled services with REST, but not with something like RabbitMQ. (I have experience with company and system integrator, one day system integrator updated RabbitMQ, but developer in company was not aware of that. RabbimMQ change message algorithm and company RabbitMQ client become loop)
 
 # Deployment
 
@@ -50,6 +50,10 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 - links from one page to other pages will change while you will move pages. You will edit your documentation, you will change structure of documents
 
 - provides authorization, not all data should be exposed.
+
+# All services
+
+- it shouldn't create technical dept
 
 # Infrastrusture services
 
@@ -83,8 +87,6 @@ Create separate network for each segment. For example if you have rack in DC and
 ### Docker
 - I didn't use docker for databases and balancers
 
-# Application services
-
 ### balancer
 - should be dumd, idea balancer - nginx with one reverse proxy block, proxy next upstream, it shouldn't contain logic, so you can bring up web server in different env, and all should work without balancer. 
 - create small VM for stale domains, 301 etc. Do not store legacy domains for redirects in production.
@@ -92,6 +94,12 @@ Create separate network for each segment. For example if you have rack in DC and
 
 ### webserver
 - suited for: rewrites and redirects, web site should work without balancer 
+
+# Application services
+
+- connect loosely coupled services with REST, but not with something like RabbitMQ. (I have experience with company and system integrator, one day system integrator updated RabbitMQ, but developer in company was not aware of that. RabbimMQ change message algorithm and company RabbitMQ client become loop)
+
+
 
 # Job processes
 
@@ -139,9 +147,6 @@ Environments should be abolutely equals. Even by CPU manufactures, app can run i
 ## SELinux
 
 Jist disable it. It's hell.
-
-# New service deploy
-- it shouldn't create technical dept
 
 # mount vs synchronization
 
