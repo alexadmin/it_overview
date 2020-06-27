@@ -1,3 +1,11 @@
+1. One script must deploy app to all envs.
+
+2. App with paticular version should build one time and accept variable depends on env. 
+
+3. One app to one DB.
+
+4. 
+
 [Foreword](#Foreword)
 
 [Documentation](#Documentation)
@@ -16,9 +24,9 @@ In this book I will share with you knoledge of services which was successfully i
 
 # Deployment
 
-1. One script must deploy app to all envs. [1]
+1. One script must deploy app to all envs.
 
-2. App with paticular version should build one time and accept variable depends on env. [2]
+2. App with paticular version should build one time and accept variable depends on env.
 
 3. One app to one DB.
 
@@ -179,9 +187,6 @@ You can review proxy servers services, they are offers simple tariff plan with 5
   - developers IDE slow down
   - long time to start up
   - modules conflicts with each other
-
-# microservices
-- each app has it own database (create database my_app)
 
 # External sources + recomended books
 
