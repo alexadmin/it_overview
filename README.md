@@ -188,3 +188,6 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 1) Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley. 2010
 
 2) "Refactoring Databases" and book "Recipes for Continuous Database Integration". Scott Ambler.
+
+3) Microservices patterns with example in Java. Chris Richardson.
+
