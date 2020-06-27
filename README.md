@@ -189,5 +189,5 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 2) "Refactoring Databases" and book "Recipes for Continuous Database Integration". Scott Ambler.
 
-3) Microservices patterns with example in Java. Chris Richardson.
+3) Microservices patterns with example in Java. 2019. Chris Richardson.
 
