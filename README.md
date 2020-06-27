@@ -16,9 +16,9 @@ In this book I will share with you knoledge of services which was successfully i
 
 # Deployment
 
-1. One script must deplpy app to all envs
+1. One script must deploy app to all envs. [1]
 
-2. App with paticular version should build one time and accept variable depends on env.
+2. App with paticular version should build one time and accept variable depends on env. [2]
 
 3. One app to one DB.
 
