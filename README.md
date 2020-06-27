@@ -110,7 +110,9 @@ VPN - tool for technical specialist, not for managers.
 
 - connect loosely coupled services with REST, but not with something like RabbitMQ. (I have experience with company and system integrator, one day system integrator updated RabbitMQ, but developer in company was not aware of that. RabbimMQ change message algorithm and company RabbitMQ client become loop)
 
+### microservices
 
+- use microservice chassis
 
 # Job processes
 
@@ -178,7 +180,6 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 # monitoring
 - every storage service RabbitMQ, MySQL... should be monitored. Script should generate hash, write it, read it and compare it.
-
 
 # monolithic vs microservice
 
