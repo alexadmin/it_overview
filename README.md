@@ -4,7 +4,7 @@
 
 3. One app to one DB.
 
-4. 
+4. All connections and parameters to external sources should be in one file.
 
 [Foreword](#Foreword)
 
