@@ -22,6 +22,8 @@ curl -XPUT “http://localhost:9200/_cluster/settings” -d
    }
 }'
 
+curl -H 'Content-Type: application/json' -XPUT localhost:9200/_cluster/settings -d '{"transient" :{"cluster.routing.allocation.node_concurrent_recoveries" : 10}}';echo
+
 curl -H 'Content-Type: application/json' -XPUT localhost:9200/_cluster/settings -d '{
 "transient" :{
 "indices.recovery.max_bytes_per_sec" : "80mb"
