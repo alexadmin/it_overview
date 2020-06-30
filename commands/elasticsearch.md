@@ -14,6 +14,14 @@ curl -XGET localhost:9200/_cluster/health?pretty
 # SHOW PROCESSES LIST
 curl -XGET 'localhost:9200/_tasks?pretty'
 
+# DRAIN
+curl -XPUT “http://localhost:9200/_cluster/settings” -d 
+'{
+  "transient" :{
+      "cluster.routing.allocation.exclude._ip" : "X.X.X.X"
+   }
+}'
+
 # SHOW PENDING TASKS
 curl -XGET 'http://localhost:9200/_cluster/pending_tasks' | jq
 
