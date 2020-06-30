@@ -21,6 +21,12 @@ curl -XPUT “http://localhost:9200/_cluster/settings” -d
       "cluster.routing.allocation.exclude._ip" : "X.X.X.X"
    }
 }'
+# ADD BACK
+curl -XPUT -H 'Content-Type: application/json' "http://localhost:9200/_cluster/settings" -d '{
+  "transient" :{
+      "cluster.routing.allocation.exclude._ip" : null
+   }
+}'
 
 curl -H 'Content-Type: application/json' -XPUT localhost:9200/_cluster/settings -d '{"transient" :{"cluster.routing.allocation.node_concurrent_recoveries" : 10}}';echo
 
