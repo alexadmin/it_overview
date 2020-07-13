@@ -25,3 +25,6 @@ docker service scale myserv=1
 # check traffic on swarm worker
 tcpdump -nn -i eth0 not port 22 and not port 7946 and not port 4789 and not port 2377
 ```
+
+# DUMP UNIX DOMAIN SOCKET
+socat -t100 -x -v UNIX-LISTEN:/run/alex.socket,mode=777,reuseaddr,fork UNIX-CONNECT:/var/lib/mysql/mysql.sock
