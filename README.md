@@ -6,6 +6,8 @@
 
 4. All connections and parameters to external sources should be in one file.
 
+Testers should write automated test before developers starts write code.
+
 [Foreword](#Foreword)
 
 [Documentation](#Documentation)
