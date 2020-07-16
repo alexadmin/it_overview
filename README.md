@@ -201,3 +201,4 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 4) Agile Testing, 2009. Lisa Crispin. (Reference from "Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation", page 84.)
 
+5) Agile Samurai, 2010 (reference from Agile Testing, 2009. Lisa Crispin.)
