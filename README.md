@@ -6,6 +6,8 @@
 
 4. All connections and parameters to external sources should be in one file.
 
+100% people utilization are equals to 100% utilization of server. [4] p. 11. 
+
 Testers should write automated test before developers starts write code.
 
 [Foreword](#Foreword)
