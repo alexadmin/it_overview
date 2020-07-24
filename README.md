@@ -62,6 +62,8 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 
 # All services
 
+- production servers should be created from scratch (without data) by configuration managment. (1, p.54)
+
 - it shouldn't create technical dept
 
 # Infrastrusture services
