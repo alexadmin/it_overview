@@ -34,6 +34,8 @@ In this book I will share with you knoledge of services which was successfully i
 
 3. One app to one DB.
 
+- Production and staging environment should contain the same structure. (1, p.54)
+
 The most simple scheme: Jenkins + Ansible. Create simple job in Jenkins and run ansible something like that:
 ```
 ansible-playbook -i dev/some_app.yml
