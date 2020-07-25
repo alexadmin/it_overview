@@ -14,7 +14,7 @@ Testers should write automated test before developers starts write code.
 
 [Documentation](#Documentation)
 
-[Deployment environment](#Deployment-environment)
+[Deployment](#Deployment)
 
 [All services](#All-services)
 
@@ -53,6 +53,7 @@ ansible-playbook -i prod/some_app.yml
 
 - deployment to production and testing shoud deferent only by configuration files, process must be the same (1, p. 249)
 - user should see list of build versions, current running version and button "deploy" (1, p. 249)
+- even non technical user can deploy application back and forth (1, p. 255)
 
 ### Database migrations
 
