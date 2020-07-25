@@ -6,7 +6,7 @@
 
 4. All connections and parameters to external sources should be in one file.
 
-100% people utilization are equals to 100% utilization of server. [4] p. 11. 
+
 
 Testers should write automated test before developers starts write code.
 
@@ -24,9 +24,14 @@ Testers should write automated test before developers starts write code.
 
 [Testing](#Testing)
 
+[Managment](#Managment)
+
 # Foreword
 
 In this book I will share with you knoledge of services which was successfully installed in production of different companies. I spent many years with that systems, I spent years of testing it. I'd like than you will not lose years for choosing between different technologies. 
+
+# Managment
+- 100% people utilization are equals to 100% utilization of server. [4] p. 11. 
 
 # Deployment
 
