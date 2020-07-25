@@ -22,6 +22,8 @@ Testers should write automated test before developers starts write code.
 
 [Application services](#Application-services)
 
+[Testing](#Testing)
+
 # Foreword
 
 In this book I will share with you knoledge of services which was successfully installed in production of different companies. I spent many years with that systems, I spent years of testing it. I'd like than you will not lose years for choosing between different technologies. 
@@ -188,6 +190,9 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 # monitoring
 - every storage service RabbitMQ, MySQL... should be monitored. Script should generate hash, write it, read it and compare it.
+
+# Testing
+- performance testing is also important as functional testing (1, p.226)
 
 # monolithic vs microservice
 
