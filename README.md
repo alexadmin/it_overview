@@ -47,6 +47,7 @@ ansible-playbook -i prod/some_app.yml
 > Using the same script to deploy to production that you use to deploy to development environments is a fantastic way to prevent the “it works on my machine” syndrome (1)
 
 - deployment to production and testing shoud deferent only by configuration files, process must be the same (1, p. 249)
+- user should see list of build versions, current running version and button "deploy" (1, p. 249)
 
 ### Database migrations
 
