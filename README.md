@@ -227,4 +227,4 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 5) Agile Samurai, 2010 (reference from Agile Testing, 2009. Lisa Crispin.)
 
-6) Visible Ops Handbook (reference from 1)
+6) Visible Ops Handbook (reference from 1, p. 286)
