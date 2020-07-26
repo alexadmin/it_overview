@@ -80,6 +80,7 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 - production servers should be created from scratch (without data) by configuration managment. (1, p.54)
 - do not make changes on production directly (1, p. 273)
 - in small company you can control everything, is it briliant (1, p. 285)
+- keep infrastructure under git-like, do not make changes without approval (1, p. 285)
 
 # Infrastrusture services
 
