@@ -202,6 +202,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 # Testing
 - performance testing is also important as functional testing (1, p.226)
+- tesing environment should be production-like (1, p. 279)
 
 # monolithic vs microservice
 
