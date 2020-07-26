@@ -81,7 +81,8 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 - do not make changes on production directly (1, p. 273)
 - in small company you can control everything, is it briliant (1, p. 285)
 - keep infrastructure under git-like, do not make changes without approval (1, p. 285, p. 287)
-- update process should be managed by single ticket system
+- update process should be managed by single ticket system (1, p. 287)
+- history of changes is necessary (1, p. 287)
 
 # Infrastrusture services
 
