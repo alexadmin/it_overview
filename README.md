@@ -56,7 +56,7 @@ ansible-playbook -i prod/some_app.yml
 - user should see list of build versions, current running version and button "deploy" (1, p. 249)
 - even non technical user can deploy application back and forth (1, p. 255)
 - build files should be compile once and upload to artifact server, they should not be recompiled every time (1, p. 256)
-- configs should be applied while deployment
+- configs should be applied while deployment (1, p. 257)
 - release should take a couple of minutes (1, p. 280)
 
 ### Database migrations
