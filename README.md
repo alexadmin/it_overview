@@ -58,6 +58,7 @@ ansible-playbook -i prod/some_app.yml
 - build files should be compile once and upload to artifact server, they should not be recompiled every time (1, p. 256)
 - configs should be applied while deployment (1, p. 257)
 - release should take a couple of minutes (1, p. 280)
+- create table "version" in database and increment/decrement version, application should compare own version in db version (1, p. 328)
 
 ### Database migrations
 
