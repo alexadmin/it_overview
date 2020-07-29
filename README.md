@@ -59,6 +59,7 @@ ansible-playbook -i prod/some_app.yml
 - configs should be applied while deployment (1, p. 257)
 - release should take a couple of minutes (1, p. 280)
 - create table "version" in database and increment/decrement version, application should compare own version in db version (1, p. 328)
+- migration roll-back script copy data to temp table before delete column, and copy back when necessary (1, p. 329)
 
 ### Database migrations
 
