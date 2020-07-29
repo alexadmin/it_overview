@@ -228,7 +228,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 3) Microservices patterns with example in Java. 2019. Chris Richardson.
 
-4) Agile Testing, 2009. Lisa Crispin. (Reference from "Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation", page 84.)
+4) Agile Testing, 2009. Lisa Crispin. (reference from 1, p. 84)
 
 5) Agile Samurai, 2010 (reference from Agile Testing, 2009. Lisa Crispin.)
 
