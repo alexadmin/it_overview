@@ -40,18 +40,9 @@ In this book I will share with you knoledge of services which was successfully i
 
 2. App with paticular version should build one time and accept variable depends on env.
 
-3. One app to one DB.
-
-- Production and staging environment should contain the same structure. (1, p.54)
-
-The most simple scheme: Jenkins + Ansible. Create simple job in Jenkins and run ansible something like that:
-```
-ansible-playbook -i dev/some_app.yml
-ansible-playbook -i prod/some_app.yml
-```
-
-> Using the same script to deploy to production that you use to deploy to development environments is a fantastic way to prevent the “it works on my machine” syndrome (1)
-
+- one app restricted to one DB (1, p. 329)
+- production and staging environment should contain the same structure. (1, p.54)
+- using the same script to deploy to production that you use to deploy to development environments is a fantastic way to prevent the “it works on my machine” syndrome (1)
 - deployment to production and testing shoud deferent only by configuration files, process must be the same (1, p. 249)
 - user should see list of build versions, current running version and button "deploy" (1, p. 249)
 - even non technical user can deploy application back and forth (1, p. 255)
