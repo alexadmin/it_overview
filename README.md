@@ -51,6 +51,7 @@ In this book I will share with you knoledge of services which was successfully i
 - release should take a couple of minutes (1, p. 280)
 - create table "version" in database and increment/decrement version, application should compare own version in db version (1, p. 328)
 - migration roll-back script copy data to temp table before delete column, and copy back when necessary (1, p. 329)
+- in hardcode monolith it is better to record app to db table links (1, p. 331)
 
 ### Database migrations
 
