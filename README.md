@@ -2,7 +2,6 @@
 
 2. App with paticular version should build one time and accept variable depends on env. 
 
-3. One app to one DB.
 
 4. All connections and parameters to external sources should be in one file.
 
