@@ -52,6 +52,7 @@ In this book I will share with you knoledge of services which was successfully i
 - migration roll-back script copy data to temp table before delete column, and copy back when necessary (1, p. 329)
 - in hardcode monolith it is better to record app to db table links (1, p. 331)
 - during deploy read DB tables and parse code, you can which table some app uses (1, p. 331)
+- blue green DB: clone DB, apply migrations, switch traffic (1, p. 332)
 
 ### Database migrations
 
