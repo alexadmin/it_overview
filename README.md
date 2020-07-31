@@ -54,6 +54,7 @@ In this book I will share with you knoledge of services which was successfully i
 - during deploy read DB tables and parse code, you can which table some app uses (1, p. 331)
 - blue green DB: clone DB, apply migrations, switch traffic (1, p. 332)
 
+
 ### Database migrations
 
 ##### Microservices
@@ -204,6 +205,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 # Testing
 - performance testing is also important as functional testing (1, p.226)
 - tesing environment should be production-like (1, p. 279)
+- create test data with naming conventions (1, p. 337)
 
 # monolithic vs microservice
 
