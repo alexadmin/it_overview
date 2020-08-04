@@ -99,7 +99,9 @@ curl -XPUT 'localhost:9200/*/_settings' -H 'Content-Type: application/json' -d '
 "index.search.slowlog.threshold.fetch.debug": "10s",
 "index.search.slowlog.threshold.fetch.trace": "5s"
 }'
+```
 
+```
 # DELETE DOCUMENTS WITH FIELDS
 curl -H 'Content-Type: application/json' -XPUT 'http://localhost:9200/web_dep_general_284/_settings' -d '{
      "index" : {
