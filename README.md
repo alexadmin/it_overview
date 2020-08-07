@@ -208,6 +208,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 - create test data with naming conventions (1, p. 337)
 - roll-back transactions after test (1, p. 337)
 - tightly coupling test is bad (1, p. 339)
+- if it is diffucult to prepare data for test, then you need to decompose project (1, p. 339)
 
 # monolithic vs microservice
 
