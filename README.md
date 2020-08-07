@@ -207,6 +207,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 - tesing environment should be production-like (1, p. 279)
 - create test data with naming conventions (1, p. 337)
 - roll-back transactions after test (1, p. 337)
+- tightly coupling test is bad (1, p. 339)
 
 # monolithic vs microservice
 
