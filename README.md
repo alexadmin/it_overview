@@ -202,6 +202,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 # monitoring
 - every storage service RabbitMQ, MySQL... should be monitored. Script should generate hash, write it, read it and compare it.
 - trigger should describe what's wrong and who (percon) should do.
+- create app systems based on queue services, that way you can monitor state of business processes
 
 # Testing
 - performance testing is also important as functional testing (1, p.226)
