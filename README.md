@@ -137,6 +137,10 @@ VPN - tool for technical specialist, not for managers.
 
 - use microservice chassis
 
+### databases
+
+- do not permit devs to create databases in production, staging. They can brake overview logic.
+
 # Job processes
 
 - Create task, describe it. How you will do it. Count all cooperation people, create agreament with all people. Before production deployment write plan of installation and reverce and backup steps
