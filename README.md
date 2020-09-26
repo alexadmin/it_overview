@@ -59,6 +59,8 @@ In this book I will share with you knoledge of services which was successfully i
 
 ### Database migrations
 
+- The same process should be used whether deploying the application to a development or acceptance testing environment with a minimal dataset, or whether migrating the production dataset as part of a deployment to production. (1, p. 343)
+
 ##### Microservices
 
 - Saga pattern suited for microservices. It is local transaction directed by message broker.
