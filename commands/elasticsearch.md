@@ -15,7 +15,7 @@ curl -XGET localhost:9200/_cluster/health?pretty
 curl -XGET 'localhost:9200/_tasks?pretty'
 
 # DRAIN
-curl -XPUT “http://localhost:9200/_cluster/settings” -d 
+curl -XPUT "http://localhost:9200/_cluster/settings" -d 
 '{
   "transient" :{
       "cluster.routing.allocation.exclude._ip" : "X.X.X.X"
