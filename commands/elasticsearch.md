@@ -20,7 +20,7 @@ curl -XPUT “http://localhost:9200/_cluster/settings” -d
   "transient" :{
       "cluster.routing.allocation.exclude._ip" : "X.X.X.X"
    }
-}'
+}';echo
 # ADD BACK
 curl -XPUT -H 'Content-Type: application/json' "http://localhost:9200/_cluster/settings" -d '{
   "transient" :{
