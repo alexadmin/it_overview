@@ -25,6 +25,8 @@ Testers should write automated test before developers starts write code.
 
 [Managment](#Managment)
 
+[Hardware](#Hardware)
+
 # Foreword
 
 In this book I will share with you knoledge of services which was successfully installed in production of different companies. I spent many years with that systems, I spent years of testing it. I'd like than you will not lose years for choosing between different technologies. 
@@ -236,6 +238,9 @@ You can review proxy servers services, they are offers simple tariff plan with 5
   - developers IDE slow down
   - long time to start up
   - modules conflicts with each other
+
+# Hardware
+- do not use exotic hardware, especially network, it is not code, it's impossible to debug hardware blackbox. It will be difficult find tech info.
 
 # External sources + recomended books
 
