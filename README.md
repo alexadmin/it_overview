@@ -40,6 +40,7 @@ In this book I will share with you knoledge of services which was successfully i
 - project failure occured because of people misunderstanding, not technocal (1, p. 279)
 - developers administer own desktop
 - single ticket system
+- after meetings with decision, fix result in email with all participants. Otherwise after some time people forget plan and tell gibberish.
 
 # Deployment
 
