@@ -27,6 +27,8 @@ Testers should write automated test before developers starts write code.
 
 [Hardware](#Hardware)
 
+[Deployment environment](#Deployment-environment)
+
 # Foreword
 
 In this book I will share with you knoledge of services which was successfully installed in production of different companies. I spent many years with that systems, I spent years of testing it. I'd like than you will not lose years for choosing between different technologies. 
