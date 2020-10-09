@@ -132,9 +132,11 @@ Create separate network for each segment. For example if you have rack in DC and
 - should be dumd, idea balancer - nginx with one reverse proxy block, proxy next upstream, it shouldn't contain logic, so you can bring up web server in different env, and all should work without balancer. 
 - create small VM for stale domains, 301 etc. Do not store legacy domains for redirects in production.
 - suited for: ip filtering, auth (basic)
+- usually not necessary for test env, but sometimes for example you need to test payment services for mobile devices, they required for https.
 
 ### webserver
 - suited for: rewrites and redirects, web site should work without balancer 
+- not necessary https, it's impossible to debug/snif trafic
 
 ### VPN
 
