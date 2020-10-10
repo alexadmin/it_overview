@@ -150,6 +150,7 @@ VPN - tool for technical specialist, not for managers.
 
 ### microservices
 
+- migration from monolith to microservice: first step - create new features in microservice. The goal is to stop monolith growing. (3, p. 433)
 - use microservice chassis
 
 ### databases
