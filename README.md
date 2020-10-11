@@ -13,6 +13,8 @@ Testers should write automated test before developers starts write code.
 
 [Documentation](#Documentation)
 
+[Continuous delivery](#Continuous-delivery)
+
 [Deployment](#Deployment)
 
 [All services](#All-services)
@@ -44,13 +46,16 @@ In this book I will share with you knoledge of services which was successfully i
 - single ticket system
 - after meetings with decision, fix result in email with all participants. Otherwise after some time people forget plan and tell gibberish.
 
-# Deployment
+# Continuous delivery
 
+Continuous delivery based on ITIL 
+> In contrast, this book assumes that you already have a strategy in place, along with processes for managing it. (1, p. 421)
+
+
+# Deployment
 - One script must deploy app to all envs.
 - Practices such as using the same process to deploy into every environment and automated environment, data, and infrastructure management are designed to ensure that the release process is thoroughly tested, the possibility for human error is minimized. (1, p. 418)
-
 - App with paticular version should build one time and accept variable depends on env.
-
 - one app restricted to one DB (1, p. 329)
 - production and staging environment should contain the same structure. (1, p.54)
 - using the same script to deploy to production that you use to deploy to development environments is a fantastic way to prevent the “it works on my machine” syndrome (1)
