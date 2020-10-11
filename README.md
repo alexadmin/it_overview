@@ -46,9 +46,10 @@ In this book I will share with you knoledge of services which was successfully i
 
 # Deployment
 
-1. One script must deploy app to all envs.
+- One script must deploy app to all envs.
+- Practices such as using the same process to deploy into every environment and automated environment, data, and infrastructure management are designed to ensure that the release process is thoroughly tested, the possibility for human error is minimized. (1, p. 418)
 
-2. App with paticular version should build one time and accept variable depends on env.
+- App with paticular version should build one time and accept variable depends on env.
 
 - one app restricted to one DB (1, p. 329)
 - production and staging environment should contain the same structure. (1, p.54)
