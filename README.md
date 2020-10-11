@@ -166,7 +166,7 @@ VPN - tool for technical specialist, not for managers.
 # Job processes
 
 - Create task, describe it. How you will do it. Count all cooperation people, create agreament with all people. Before production deployment write plan of installation and reverce and backup steps
-- QA engineers should work with GUI only
+- QA (junior, manual) engineers should work with GUI only
 
 # Deployment environment
 
