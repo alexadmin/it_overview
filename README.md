@@ -253,6 +253,9 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 # Hardware
 - do not use exotic hardware, especially network, it is not code, it's impossible to debug hardware blackbox. It will be difficult find tech info.
 
+# Misc
+- in enterprice do not send user credentials directly to users, users should request it from helpdesk, otherwise you will be DDOSed.
+
 # External sources + recomended books
 
 1) Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley. 2010
