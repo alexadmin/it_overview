@@ -38,6 +38,7 @@ In this book I will share with you knoledge of services which was successfully i
 # Ideology
 - KISS
 - Things that are complex are not useful. Things that are useful are simple. M. Kalashnikov.
+- system can't work without: feedback, audit.
 
 # Managment
 - 100% people utilization are equals to 100% utilization of server. [4] p. 11. 
