@@ -84,7 +84,7 @@ Continuous delivery based on ITIL
 
 # Documentation
 
-Documentation shoud be in one place.
+Documentation shoud be in one place. Documentation should act as caching proxy, if developer write code without documentation, that developer will work like caching proxy, he will be DDOSed by other developers or managers.
 
 Confluence - is good choice. Free mediawiki can't competite with him. 
 
