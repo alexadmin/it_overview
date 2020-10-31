@@ -104,6 +104,17 @@ Confluence - is good choice. Free mediawiki can't competite with him.
 
 # Infrastrusture services
 
+### Kubernetes
+
+In small and middle envs install 2 instances of simple installation in vitrual machines. Create 2 VM, install OS, create snapshots "clean_os", then install k8s
+
+```
+kubeadm init --pod-network-cidr=10.244.0.0/16
+kubeadm init --pod-network-cidr=10.245.0.0/16
+````
+
+Create worker servers, join to masters. In case of diaster rollback to "clean_os", delete all docker worker containers, reinstall k8s, redeploy all services.  
+
 ### authorization service
 
 Windows Server - is best choise. Yes, I'm Linux admin, but I use it. OpenLDAP is not suited for commercial exploitation. Install at least 2 servers. First server promote to DC, add second server to domain of first server, promote second server to DC.
