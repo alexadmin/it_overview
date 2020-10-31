@@ -110,7 +110,7 @@ In small and middle envs install 2 instances of simple installation in vitrual m
 
 ```
 kubeadm init --pod-network-cidr=10.244.0.0/16
-kubeadm init --pod-network-cidr=10.245.0.0/16
+kubeadm init --pod-network-cidr=10.244.0.0/16
 ````
 
 Create worker servers, join to masters. In case of diaster rollback to "clean_os", delete all docker worker containers, reinstall k8s, redeploy all services.  
