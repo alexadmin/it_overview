@@ -4,6 +4,9 @@
 # INTER INTO CONTAINER
 kubectl exec -it my-pod -- /bin/bash
 
+#
+kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml
+
 # SHOW ALL
 kubectl get rc,pods,deployment,daemonset,svc,ingress,secrets,configmaps --all-namespaces=true
 
