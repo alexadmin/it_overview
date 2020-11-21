@@ -84,8 +84,9 @@ MariaDB [(none)]> reset slave all;
 systemctl restart mariadb
 [/bash]
 
-```
+
 <strong>Debug</strong>
+```
 [bash]
 SET global log_output = 'FILE';
 SET global general_log_file='/tmp/mysql_general.log';
