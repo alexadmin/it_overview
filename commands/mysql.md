@@ -1,3 +1,4 @@
+<strong>create db or tables</strong>
 ```
 # CREATE TABLE INNODB
 CREATE TABLE test.`users` (
@@ -87,11 +88,9 @@ systemctl restart mariadb
 
 <strong>Debug</strong>
 ```
-[bash]
 SET global log_output = 'FILE';
 SET global general_log_file='/tmp/mysql_general.log';
 SET global general_log = 1;
-[/bash]
 ```
 
 <strong>mysql etc</strong>
