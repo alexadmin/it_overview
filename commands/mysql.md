@@ -60,7 +60,7 @@ mysqldump db_name | mysql new_db_name
 mysqldump -u root -p[root_password] [database_name] > dump.sql
 [/bash]
 
-<strong>mysql syntax</strong>
+<strong>Users</strong>
 
 [bash]
 # ADD LOCAL ADMIN
@@ -83,6 +83,15 @@ MariaDB [(none)]> slave stop;
 MariaDB [(none)]> reset slave all;
 systemctl restart mariadb
 [/bash]
+
+```
+<strong>Debug</strong>
+[bash]
+SET global log_output = 'FILE';
+SET global general_log_file='/tmp/mysql_general.log';
+SET global general_log = 1;
+[/bash]
+```
 
 <strong>mysql etc</strong>
 
