@@ -84,7 +84,7 @@ MariaDB [(none)]> slave stop;
 MariaDB [(none)]> reset slave all;
 systemctl restart mariadb
 [/bash]
-
+```
 
 <strong>Debug</strong>
 ```
