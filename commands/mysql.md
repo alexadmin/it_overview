@@ -115,7 +115,7 @@ zcat dump.sql.gz > dump.sql
 
 <strong>INNODB file per table</strong>
 
-[bash]
+```
 mysqldump -u root -p --all-databases > /all.sql
 systemctl stop mariadb
 Delete ibdata* and ib_logfile*
@@ -125,9 +125,7 @@ vim my.cnf
 
 [mysqld]
 innodb_file_per_table
-[/bash]
-
-
+```
 
 # LOG ALL QUERIES
 set @@global.general_log = ON;
