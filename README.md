@@ -281,3 +281,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 5) Agile Samurai, 2010 (reference from Agile Testing, 2009. Lisa Crispin.)
 
 6) Visible Ops Handbook, 2005 (reference from 1, p. 286)
+
+7) M. Burgess, Principles of Network and System Administration: Wiley, 1999. (reference from 8)
+
+8) SRE
