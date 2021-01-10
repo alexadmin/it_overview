@@ -72,7 +72,7 @@ Continuous delivery based on ITIL
 - in hardcode monolith it is better to record app to db table links (1, p. 331)
 - during deploy read DB tables and parse code, you can which table some app uses (1, p. 331)
 - blue green DB: clone DB, apply migrations, switch traffic (1, p. 332)
-
+- New service like new baby, think before creation. "40–90% of the total costs of a system are incurred after birth" (8, p. XV)
 
 ### Database migrations
 
