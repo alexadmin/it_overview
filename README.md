@@ -285,4 +285,4 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 7) M. Burgess, Principles of Network and System Administration: Wiley, 1999. (reference from 8)
 
-8) SRE
+8) Site Reliability Engineering, edited by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy (O’Reilly). Copy‐right 2016 Google, Inc., 978-1-491-92912-4
