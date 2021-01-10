@@ -49,6 +49,7 @@ In this book I will share with you knoledge of services which was successfully i
 > We believe very strongly that the most effective teams develop software in cross-functional groups that are composed of people from all of the different disciplines required to define, develop, test, and release software. These groups should sit together—when they don’t, they don’t benefit from each other’s knowledge. (1, p. 439)
 - "SREs are engineers" (8, p. VX)
 - "SRE is what happens when you ask a software engineer to design an operations team" (8, p. 5)
+- "Google’s rule of thumb is that an SRE team must spend the remaining 50% of its time actually doing development." (8, p. 6)
 
 # Continuous delivery
 
