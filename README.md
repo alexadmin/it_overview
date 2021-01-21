@@ -51,6 +51,7 @@ In this book I will share with you knoledge of services which was successfully i
 - "SRE is what happens when you ask a software engineer to design an operations team" (8, p. 5)
 - "Google’s rule of thumb is that an SRE team must spend the remaining 50% of its time actually doing development." (8, p. 6)
 - "SRE team is responsible for the availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning of their service(s)" (8, p. 7)
+- "SREs at 50% of their time. Their remaining time should be spent using their coding skills on project work." (8, p. 7)
 
 # Continuous delivery
 
