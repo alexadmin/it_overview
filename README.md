@@ -52,6 +52,7 @@ In this book I will share with you knoledge of services which was successfully i
 - "Google’s rule of thumb is that an SRE team must spend the remaining 50% of its time actually doing development." (8, p. 6)
 - "SRE team is responsible for the availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning of their service(s)" (8, p. 7)
 - "SREs at 50% of their time. Their remaining time should be spent using their coding skills on project work." (8, p. 7)
+- "This also provides an effective feedback mechanism, guiding developers to build systems that don’t need manual intervention." (8, p. 8)
 
 # Continuous delivery
 
