@@ -62,6 +62,7 @@ Continuous delivery based on ITIL
 
 # Monitoring
 - "humans should be notified only when they need to take action." (8, p. 9)
+- three kinds of valid monitoring output: alert, ticket, log. (8, p. 10)
 
 # Deployment
 - One script must deploy app to all envs.
