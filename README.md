@@ -60,6 +60,8 @@ In this book I will share with you knoledge of services which was successfully i
 Continuous delivery based on ITIL 
 > In contrast, this book assumes that you already have a strategy in place, along with processes for managing it. (1, p. 421)
 
+# Monitoring
+- "humans should be notified only when they need to take action." (8, p. 9)
 
 # Deployment
 - One script must deploy app to all envs.
