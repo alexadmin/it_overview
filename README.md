@@ -53,6 +53,7 @@ In this book I will share with you knoledge of services which was successfully i
 - "SRE team is responsible for the availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning of their service(s)" (8, p. 7)
 - "SREs at 50% of their time. Their remaining time should be spent using their coding skills on project work." (8, p. 7)
 - "This also provides an effective feedback mechanism, guiding developers to build systems that don’t need manual intervention." (8, p. 8)
+- "SREs should receive a maximum of two events per 8–12-hour on-call shift" (8, p. 8)
 
 # Continuous delivery
 
