@@ -17,6 +17,8 @@ Testers should write automated test before developers starts write code.
 
 [Deployment](#Deployment)
 
+[Monitoring](#Monitoring)
+
 [All services](#All-services)
 
 [Infrastrusture services](#Infrastrusture-services)
