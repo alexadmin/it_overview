@@ -56,6 +56,7 @@ In this book I will share with you knoledge of services which was successfully i
 - "SREs at 50% of their time. Their remaining time should be spent using their coding skills on project work." (8, p. 7)
 - "This also provides an effective feedback mechanism, guiding developers to build systems that don’t need manual intervention." (8, p. 8)
 - "SREs should receive a maximum of two events per 8–12-hour on-call shift" (8, p. 8)
+- "All software is reviewed before being submitted." (8, p. 20)
 
 # Continuous delivery
 
