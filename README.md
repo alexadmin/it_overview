@@ -277,6 +277,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 
 # Misc
 - in enterprice do not send user credentials directly to users, users should request it from helpdesk, otherwise you will be DDOSed.
+- "Machines can run any server, so we don’t dedicate specific machines to specific server programs." (8, p. 14)
 
 # External sources + recomended books
 
