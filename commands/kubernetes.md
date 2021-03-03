@@ -81,24 +81,31 @@ kubectl uncordon mynode
 kubectl cordon mynode
 ```
 
-<strong>rc-nginx.yaml</strong>
+<strong>deployment.yaml</strong>
 ```
-apiVersion: v1
-kind: ReplicationController
+kind: Deployment
+apiVersion: apps/v1
 metadata:
-  name: rc-nginx
+  name: stilton
+  labels:
+    app: cheese
+    cheese: stilton
 spec:
   replicas: 2
   selector:
-    app: nginx
+    matchLabels:
+      app: cheese
+      task: stilton
   template:
     metadata:
       labels:
-        app: nginx
+        app: cheese
+        task: stilton
+        version: v0.0.1
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.7.9
+      - name: cheese
+        image: errm/cheese:stilton
         ports:
         - containerPort: 80
 ```
@@ -108,19 +115,34 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginxsvc
-  labels:
-    app: nginx
+  name: stilton
 spec:
-  type: LoadBalancer
-  externalIPs:
-    - 10.99.1.7
-    - 10.99.1.3
   ports:
-    - protocol: TCP
-      port: 80
+  - name: http
+    targetPort: 80
+    port: 80
   selector:
-      app: nginx
+    app: cheese
+    task: stilton
+```
+
+<strong>ingress.yaml</strong>
+```
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: cheese
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: stilton.minikube
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: stilton
+          servicePort: http
 ```
 
 ```
