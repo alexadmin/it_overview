@@ -83,29 +83,30 @@ kubectl cordon mynode
 
 <strong>deployment.yaml</strong>
 ```
-kind: Deployment
 apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: stilton
+  name: nginx-deployment
   labels:
-    app: cheese
-    cheese: stilton
+    app: nginx
 spec:
-  replicas: 2
+  replicas: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1        
+      maxUnavailable: 0
   selector:
     matchLabels:
-      app: cheese
-      task: stilton
+      app: nginx
   template:
     metadata:
       labels:
-        app: cheese
-        task: stilton
-        version: v0.0.1
+        app: nginx
     spec:
       containers:
-      - name: cheese
-        image: errm/cheese:stilton
+      - name: nginx
+        image: nginx:1.7.9
         ports:
         - containerPort: 80
 ```
@@ -115,15 +116,16 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: stilton
+  name: nginxsvc
+  labels:
+    app: nginx
 spec:
+  type: LoadBalancer
   ports:
-  - name: http
-    targetPort: 80
-    port: 80
+    - protocol: TCP
+      port: 80
   selector:
-    app: cheese
-    task: stilton
+      app: nginx
 ```
 
 <strong>ingress.yaml</strong>
@@ -131,18 +133,16 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: cheese
-  annotations:
-    kubernetes.io/ingress.class: traefik
+  name: traefik-ingr
 spec:
   rules:
-  - host: stilton.minikube
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: stilton
-          servicePort: http
+    - host: nginx
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: nginxsvc
+              servicePort: 80
 ```
 
 ```
