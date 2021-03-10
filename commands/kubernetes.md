@@ -79,6 +79,9 @@ kubectl drain mynode
 kubectl uncordon mynode 
 # prevent a node from scheduling new pods
 kubectl cordon mynode
+# remove
+kubectl drain <node-name> --ignore-daemonsets --delete-local-data
+kubectl delete node <node-name>
 ```
 
 <strong>deployment.yaml</strong>
