@@ -9,6 +9,12 @@
 
 Testers should write automated test before developers starts write code.
 
+Professional features:
+
+1. does not tolerate 
+2. does not use legacy
+3. do job blameless or do nothing
+
 [Foreword](#Foreword)
 
 [Documentation](#Documentation)
