@@ -49,6 +49,7 @@ In this book I will share with you knoledge of services which was successfully i
 - system can't work without: feedback, audit.
 
 # Managment
+- do not update infrastructure (OPS) with code (DEV), it will be difficult to troubleshoot. (own)
 - 100% people utilization are equals to 100% utilization of server. [4] p. 11. 
 - project failure occured because of people misunderstanding, not technocal (1, p. 279)
 - developers administer own desktop
