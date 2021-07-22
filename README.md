@@ -174,6 +174,7 @@ Create separate network for each segment. For example if you have rack in DC and
 - create small VM for stale domains, 301 etc. Do not store legacy domains for redirects in production.
 - suited for: ip filtering, auth (basic)
 - usually not necessary for test env, but sometimes for example you need to test payment services for mobile devices, they required for https.
+- consumer must connect to backend only by balancer
 
 ### webserver
 - suited for: rewrites and redirects, web site should work without balancer 
