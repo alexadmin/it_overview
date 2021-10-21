@@ -103,6 +103,7 @@ Continuous delivery based on ITIL
 
 - Saga pattern suited for microservices. It is local transaction directed by message broker.
 - When services are loosely coupled, a change to one service should not require a change to another. (9, p. 65)
+- do not store files in microservices https://stackoverflow.com/questions/47938144/serving-static-files-in-a-microservices-environment
 
 # Documentation
 
