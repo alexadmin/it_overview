@@ -298,6 +298,7 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 - check logs
 - check tcpdump
 - change version
+- build the most simple scheme
 
 # External sources + recomended books
 
