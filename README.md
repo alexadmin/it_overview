@@ -293,6 +293,12 @@ You can review proxy servers services, they are offers simple tariff plan with 5
 - in enterprice do not send user credentials directly to users, users should request it from helpdesk, otherwise you will be DDOSed.
 - "Machines can run any server, so we don’t dedicate specific machines to specific server programs." (8, p. 14)
 
+# Troubleshooting
+- draw scheme
+- check logs
+- check tcpdump
+- change version
+
 # External sources + recomended books
 
 1) Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley. 2010
