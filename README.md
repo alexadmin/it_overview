@@ -74,6 +74,7 @@ Continuous delivery based on ITIL
 - "humans should be notified only when they need to take action." (8, p. 9)
 - three kinds of valid monitoring output: alert, ticket, log. (8, p. 10)
 - "every server has an HTTP server that provides diagnostics and statistics for a given task" (8, p. 19)
+- monitoring can be out of electricity, it should be multiDC scheme
 
 # Deployment
 - One script must deploy app to all envs.
