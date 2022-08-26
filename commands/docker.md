@@ -70,3 +70,8 @@ docker ps -a | grep Exited | awk 'system("docker rm -f  "$1)'
 ```
 docker run --name mysql57 -p 3357:3306 -e MYSQL_ROOT_PASSWORD=qwerty -d mysql:5.7.30
 ```
+
+# install pkgs
+```
+apt update && apt upgrade && apt install iputils-ping
+```
