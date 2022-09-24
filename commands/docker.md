@@ -66,6 +66,14 @@ docker images | grep '<none>' | awk 'system("docker rmi -f  "$3)'
 docker ps -a | grep Exited | awk 'system("docker rm -f  "$1)'
 ```
 
+# Delete all
+```
+# Delete all containers using the following command:
+docker rm -f $(docker ps -a -q)
+# Delete all volumes using the following command:
+docker volume rm $(docker volume ls -q)
+```
+
 # Databases
 ```
 docker run --name mysql57 -p 3357:3306 -e MYSQL_ROOT_PASSWORD=qwerty -d mysql:5.7.30
