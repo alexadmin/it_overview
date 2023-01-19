@@ -49,7 +49,7 @@ iptables -I DOCKER 1 -p tcp ! -s 1.1.1.1 --dport 80 -j DROP
 docker images | grep -v "centos\|REPOSITORY" | awk 'system("docker rmi "$3)'
 
 # DELETE ALL CONTAINERS
-docker ps -a | grep -v 'CONTAINER' | awk 'system("docker rm -f  "$1)'
+docker ps -aq | awk 'system("docker rm -f  "$1)'
 
 # DELETE IMAGES IN REGISTRY
 cd /data/docker/containers/registry/var/lib/registry/docker/registry/v2/repositories
