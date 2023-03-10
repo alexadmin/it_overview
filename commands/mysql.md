@@ -33,22 +33,29 @@ ALTER TABLE tablename AUTO_INCREMENT = 1
 
 ```
 RESTORE ONE DATABASE FROM ALL DATABASES DUMP
+
 mysql -D mydb -o < mydump.sql
 
 RESTORE SPEED LIMIT - 1 MEGABYTE PER SECOND
+
 pv -L 1m MyDB.sql | mysql -u root -p'XXX' MyDB
 
 RESTORE
+
 mysql -u root -p[root_password] [database_name] < dump.sql
 
 COPY GRANTS
+
 mysqldump mysql db > db_table_dump.sql
+
 mysqldump mysql user > user_table_dump.sql
 
 RESTORE ONE DATABASE FROM ALL DATABASE BACKUP
+
 mysql -u root --one-database mydb -p < all-databases.sql
 
 RESTORE ONE TABLE
+
 sed -n -e '/DROP TABLE.*`table_name`/,/UNLOCK TABLES/p' full_dump > table_name.sql
 ```
 
