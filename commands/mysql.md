@@ -41,6 +41,10 @@ pv -L 1m MyDB.sql | mysql -u root -p'XXX' MyDB
 # RESTORE
 mysql -u root -p[root_password] [database_name] < dump.sql
 
+# COPY GRANTS
+mysqldump mysql db > db_table_dump.sql
+mysqldump mysql user > user_table_dump.sql
+
 # RESTORE ONE DATABASE FROM ALL DATABASE BACKUP
 mysql -u root --one-database mydb -p < all-databases.sql
 
