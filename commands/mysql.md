@@ -31,7 +31,7 @@ ALTER TABLE tablename AUTO_INCREMENT = 1
 [/bash]
 
 
-[bash]
+```
 # RESTORE ONE DATABASE FROM ALL DATABASES DUMP
 mysql -D mydb -o < mydump.sql
 
@@ -50,7 +50,7 @@ mysql -u root --one-database mydb -p < all-databases.sql
 
 # RESTORE ONE TABLE
 sed -n -e '/DROP TABLE.*`table_name`/,/UNLOCK TABLES/p' full_dump > table_name.sql
-[/bash]
+```
 
 <strong>mysqldump</strong>
 
