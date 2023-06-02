@@ -71,6 +71,7 @@ Continuous delivery based on ITIL
 > In contrast, this book assumes that you already have a strategy in place, along with processes for managing it. (1, p. 421)
 
 # Monitoring
+- ask business/devs about business metrics, notify them, that one part of website/service can be broken after update, you can be not aware of than broken part.
 - "humans should be notified only when they need to take action." (8, p. 9)
 - three kinds of valid monitoring output: alert, ticket, log. (8, p. 10)
 - "every server has an HTTP server that provides diagnostics and statistics for a given task" (8, p. 19)
