@@ -101,6 +101,12 @@ curl -XPUT 'localhost:9200/*/_settings' -H 'Content-Type: application/json' -d '
 ```
 
 ```
+# list users
+curl /_xpack/security/user?v
+```
+
+
+```
 # DELETE DOCUMENTS WITH FIELDS
 curl -H 'Content-Type: application/json' -XPUT 'http://localhost:9200/web_dep_general_284/_settings' -d '{
      "index" : {
