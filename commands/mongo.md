@@ -7,5 +7,5 @@ db.system.users.find()
 create admin
 ```
 use admin
-db.createUser({ user: "root" , pwd: "mgt-rc_v3", roles: ["userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase"]})
+db.createUser({ user: "root" , pwd: "123", roles: ["userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase"]})
 ```
