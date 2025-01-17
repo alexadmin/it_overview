@@ -12,4 +12,7 @@ db.createUser({ user: "root" , pwd: "123", roles: ["userAdminAnyDatabase", "dbAd
 
 ```
 mongotop -h name.com -u admin --authenticationDatabase admin
+
+mongodump --host=XXXX --username=XXXX --password=XXXX --authenticationDatabase=admin --archive
+=history-17-Jan.archive --db=history
 ```
