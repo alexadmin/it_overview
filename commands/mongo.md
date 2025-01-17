@@ -15,4 +15,5 @@ mongotop -h name.com -u admin --authenticationDatabase admin
 
 mongodump --host=XXXX --username=XXXX --password=XXXX --authenticationDatabase=admin --archive
 =history-17-Jan.archive --db=history
+mongorestore --host=XXX --port=27017  --archive=history-17-Jan.archive
 ```
