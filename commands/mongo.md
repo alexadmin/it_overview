@@ -17,3 +17,9 @@ mongodump --host=XXXX --username=XXXX --password=XXXX --authenticationDatabase=a
 =history-17-Jan.archive --db=history
 mongorestore --host=XXX --port=27017  --archive=history-17-Jan.archive
 ```
+
+reinitiate db:
+- start without rs
+- use local; db.dropDatabase()
+- start with rs
+- rs.initiate()
