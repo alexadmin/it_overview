@@ -6,3 +6,7 @@
 
 ```csptest -keyset -enum_cont -verifycontext -fqcn```
 
+посмотреть цепочку сертификатов
+
+```certmgr -list -chain```
+
