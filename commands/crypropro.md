@@ -10,3 +10,5 @@
 
 ```certmgr -list -chain```
 
+/opt/cprocsp/bin/amd64/certmgr -list -chain
+
