@@ -24,6 +24,11 @@ db.createUser(
 )
 ```
 
+run script
+```
+mongosh "mongodb://host/admin" --username=root --password=passwd < mongo.js
+```
+
 ```
 mongotop -h name.com -u admin --authenticationDatabase admin
 
