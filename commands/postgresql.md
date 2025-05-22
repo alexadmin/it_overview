@@ -1,6 +1,7 @@
 ```
 CREATE USER "user" WITH PASSWORD 'qweqwe';
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA "myschema" TO "user";
+GRANT USAGE ON SCHEMA analytics TO publishers;
 
 # SHOW DATA IN TABLE
 \x
