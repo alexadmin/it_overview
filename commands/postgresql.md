@@ -1,4 +1,6 @@
 ```
+CREATE USER "user" WITH PASSWORD 'qweqwe';
+
 # SHOW DATA IN TABLE
 \x
 
