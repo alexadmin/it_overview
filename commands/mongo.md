@@ -37,8 +37,14 @@ mongodump --host=XXXX --username=XXXX --password=XXXX --authenticationDatabase=a
 mongorestore --host=XXX --port=27017  --archive=history-17-Jan.archive
 ```
 
+```
 reinitiate db:
 - start without rs
 - use local; db.dropDatabase()
 - start with rs
 - rs.initiate()
+
+# generate key file
+openssl rand  -base64  756
+```
+
