@@ -72,4 +72,10 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO readaccess;
 -- Create a final user with password
 CREATE USER tomek WITH PASSWORD 'secret';
 GRANT readaccess TO tomek;
+
+
+CREATE USER "user" WITH PASSWORD 'XXXX';
+GRANT  USAGE   ON SCHEMA myschema  TO "user";
+GRANT SELECT ON ALL TABLES IN SCHEMA myschema TO "user";
+
 ```
