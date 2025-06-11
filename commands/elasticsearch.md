@@ -127,4 +127,24 @@ curl -H 'Content-Type: application/json' -XPUT 'http://localhost:9200/web_dep_ge
         "blocks.write" : true
      }
 }'
+
+# DELETE DOCUMENTS BY TIMESTAMP
+GET MY_INDEX/_search
+{
+"query" : {"range" :
+            {"@timestamp" :
+              {"gt" : "2021-10-12T00:00:00.000Z", "lt" : "2022-01-12T23:59:00.000Z"}
+            }
+          }
+}
+POST MY_INDEX/_delete_by_query
+{
+"query" : {"range" :
+            {"@timestamp" :
+              {"gt" : "2021-10-12T00:00:00.000Z", "lt" : "2022-01-12T23:59:00.000Z"}
+            }
+          }
+}
+# stop recording
+curl -X POST 'localhost:9200/MY_INDEX/_forcemerge'
 ```
