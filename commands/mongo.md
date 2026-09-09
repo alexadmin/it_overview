@@ -48,3 +48,34 @@ reinitiate db:
 openssl rand  -base64  756
 ```
 
+rs in docker
+- install without auth
+- create admin
+- start like rs
+- rs.initiate()
+```
+  mongodb_main:
+    hostname: myhost
+    container_name: mongodb
+    image:  mongo:5.0.1
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: XXXXXXX
+    volumes:
+      - /etc/mongod.conf:/etc/mongod.conf
+      - /opt/docker_data/mongodb/data:/data/db
+      - ./rskey:/data/replicaset.key.devel
+    ports:
+      - 27017:27017
+#    entrypoint: mongod --dbpath /data/db --config /etc/mongod.conf
+    entrypoint:
+      - bash
+      - -c
+      - |
+        cp /data/replicaset.key.devel /data/replicaset.key
+        chmod 400 /data/replicaset.key
+        chown 999:999 /data/replicaset.key
+        exec docker-entrypoint.sh $$@
+    command: "mongod --dbpath /data/db --config /etc/mongod.conf --keyFile /data/replicaset.key"
+    restart: unless-stopped
+```
