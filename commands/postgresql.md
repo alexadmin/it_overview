@@ -4,6 +4,9 @@ GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA "myschema" TO "user";
 GRANT USAGE ON SCHEMA analytics TO publishers;
 ALTER SCHEMA name OWNER TO "user";
 
+# COPY USERS
+export PGPASSWORD=XXXX; pg_dumpall -h XXXXX --globals-only -U postgres -f /tmp/roles.sql
+
 # SHOW DATA IN TABLE
 \x
 
