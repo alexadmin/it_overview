@@ -6,6 +6,7 @@ ALTER SCHEMA name OWNER TO "user";
 
 # COPY USERS
 export PGPASSWORD=XXXX; pg_dumpall -h XXXXX --globals-only -U postgres -f /tmp/roles.sql
+export PGPASSWORD=XXXX; psql -h SECONDHOST -U postgres < /tmp/roles.sql
 
 # SHOW DATA IN TABLE
 \x
