@@ -50,6 +50,10 @@ select COUNT(*) from pg_stat_activity WHERE state = 'idle';
 
 # SHOW DATABASE SIZE
 SELECT pg_size_pretty( pg_database_size('DB_NAME') );
+
+# DUMP RESTORE
+pg_dump my_db > my_db.sql
+psql -d my_db -f my_db.sql
 ```
 9.3
 ```
@@ -83,3 +87,5 @@ GRANT  USAGE   ON SCHEMA myschema  TO "user";
 GRANT SELECT ON ALL TABLES IN SCHEMA myschema TO "user";
 
 ```
+
+
