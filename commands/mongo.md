@@ -53,6 +53,13 @@ rs in docker
 - create admin
 - start like rs
 - rs.initiate()
+
+add node to cluster:
+- copy /etc/mongod.conf and keyfile to slave
+- rm -rf /var/lib/mongo/*
+- start slave with systemd "TimeoutSec=9000000"
+- on master: rs.add( "hostname:27017" )
+  
 ```
   mongodb_main:
     hostname: myhost
